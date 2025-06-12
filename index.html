@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Surpresa ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function criarCoracao() {
+    const coracao = document.createElement('div');
+    coracao.classList.add('coracao');
+    coracao.innerText = '❤️';
+    coracao.style.left = Math.random() * 100 + 'vw';
+    document.body.appendChild(coracao);
+
+    setTimeout(() => {
+      coracao.remove();
+    }, 8000); // Dura 8 segundos
+  }
+
+  setInterval(criarCoracao, 400); // Um coração novo a cada 0.4s
+
+  function mostrarAlerta() {
+    alert("Você é a melhor parte dos meus dias. Obrigada por ser meu amor, meu parceiro, meu lugar de paz. Te amo infinitamente, você é o amor da minha vida ❤️");
+  }
+</script>
+<body>
+
+  <!-- Carrossel de fotos -->
+  <div id="carouselFotos" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="900">  
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/foto_1.jpeg" class="d-block w-100" alt="Foto 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_2.jpeg" class="d-block w-100" alt="Foto 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_3.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_4.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_5.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_6.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_7.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_8.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_9.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_10.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_11.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_12.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_13.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_14.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_15.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_16.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_17.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto_18.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- Frase central e botão -->
+  <div class="frase-central">
+    <p>Tenho uma coisinha pra te dizer...</p>
+    <button class="botao-surpresa" onclick="mostrarAlerta()">Clique aqui pra uma surpresa</button>
+  </div>
+
+  <!-- Bootstrap JS (necessário pro carrossel) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
